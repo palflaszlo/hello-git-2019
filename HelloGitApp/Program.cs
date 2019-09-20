@@ -13,7 +13,9 @@ namespace HelloGitApp {
             Console.WriteLine("Press enter to EXIT");
             Console.ReadLine();
             //1.feladat
-            int[] bekertSzamok = new int[10];
+            Console.WriteLine("Adja meg hogy hány számból álljon egy tömb, ahova számokat kérünk majd be: ");
+            int meretSzam = Convert.ToInt32(Console.ReadLine());
+            int[] bekertSzamok = new int[meretSzam];
             int i = 0;
             while(i<10) {
                 Console.WriteLine("Kérem ajdon meg egy számot: ");
